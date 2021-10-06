@@ -6,7 +6,7 @@ try:
     elif 60 <= duration < 3600:  # равносильно записи duration >= 60 and duration < 3600
         minute = duration // 60
         sec = duration % 60
-        print(f'{min} мин {sec} сек')
+        print(f'{minute} мин {sec} сек')
     elif 3600 <= duration < 86400:  # равносильно записи duration >= 3600 and duration < 86400
         hour = duration // 3600
         minute = (duration % 3600) // 60
