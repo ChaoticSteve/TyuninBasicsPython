@@ -18,5 +18,5 @@ try:
         minute = ((duration % 3600) // 60)
         sec = (duration % 3600) % 60
         print(f'{day} дн {hour} час {minute} мин {sec} сек')
-except ValueError:
+except ValueError:  # определил исключение, если пользоваетль введёт не число
     print('Нужно ввести числовое значение')
