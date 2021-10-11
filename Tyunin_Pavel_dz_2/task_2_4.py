@@ -1,7 +1,6 @@
 staff = ['инженер-конструктор Игорь', 'главный бухгалтер МАРИНА', 'токарь высшего разраяда нИКОЛАЙ', 'директор аэлита']
 for i in range(len(staff)):
     staff[i] = staff[i].title()
-    # staff[i] = staff[i][::-1]
     staff[i] = staff[i].split(' ')
     print(f'Привет, {staff[i][len(staff[i]) - 1]}!')
 print(staff)
