@@ -9,11 +9,8 @@ def thesaurus(names):
 
 
 def thesaurus_adv(*names):
-    my_list = []
     my_dict = {}
-    for name in names:
-        my_list.append(name.split(' '))
-    for name in my_list:
+    for name in (name.split(' ') for name in names):
         if name[1][0] not in my_dict:
             my_dict[name[1][0]] = [name]
         else:
