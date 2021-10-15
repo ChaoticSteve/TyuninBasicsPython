@@ -13,3 +13,8 @@ def num_translate_adv(name):
                            'seven': 'семь', 'eight': 'восемь',
                            'nine': 'девять', 'ten': 'десять'}
         print(digit_translate.get(name))
+
+
+num_translate_adv('Six')
+num_translate_adv('six')
+num_translate_adv('eleven')
