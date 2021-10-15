@@ -29,4 +29,3 @@ def get_jokes(count, var=True):
 
 
 get_jokes(7, False)
-
