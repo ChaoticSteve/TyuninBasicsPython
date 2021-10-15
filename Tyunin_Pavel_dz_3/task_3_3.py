@@ -9,12 +9,3 @@ def thesaurus(*names):
 
 
 print(thesaurus('Иван', 'Мария', 'Петр', 'Илья'))
-
-# staff = {}
-# letter = 'B'
-# name = 'Bob'
-# staff[letter] = [name]
-# print(staff)
-# name_2 = 'Bib'
-# staff[letter].append(name_2)
-# print(staff)
