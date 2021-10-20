@@ -13,10 +13,13 @@ def currency_rate(val):
         if val in string:
             if '100' not in string:
                 course = string[string.find('<Value>') + 7:string.find('<', string.find('<Value>') + 7)]
-                print(f'Стоимость 1{val} = {decimal.Decimal(course.replace("," , "."))}RUB на момент {date_now}')
+                print(f'Стоимость 1{val} = {decimal.Decimal(course.replace(",", "."))}RUB на момент {date_now}')
                 break
             else:
                 course = string[string.find('<Value>') + 7:string.find('<', string.find('<Value>') + 7)]
                 print(f'Стоимость 100{val} = {decimal.Decimal(course.replace(",", "."))}RUB на момент {date_now}')
                 break
 
+
+currency_rate('eur')
+currency_rate('USD')
