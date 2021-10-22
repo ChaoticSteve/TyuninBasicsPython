@@ -4,12 +4,12 @@ Task 1
 """
 
 
-def nums_gen(n):
+def odd_nums(n):
     for num in range(1, n + 1, 2):
         yield num
 
 
-print(type(nums_gen(15)))
+print(type(odd_nums(15)))
 
 """
 Task 2
@@ -17,8 +17,8 @@ Task 2
 """
 
 
-def nums_gen_adv(n):
+def odd_nums_adv(n):
     return (num for num in range(1, n + 1, 2))
 
 
-print(type(nums_gen_adv(20)))
+print(type(odd_nums_adv(20)))
