@@ -7,8 +7,10 @@ def email_parse(email_address):
         raise ValueError(f'Not email')
     print(re_email.match(email_address).groupdict())
 
-try:
-    email_parse('someone@greekbrains.ru')
-    email_parse('dfdsfsdf')
-except ValueError as e:
-    print(e)
+
+if __name__ == '__main__':
+    try:
+        email_parse('someone@greekbrains.ru')
+        email_parse('dfdsfsdf')
+    except ValueError as e:
+        print(e)

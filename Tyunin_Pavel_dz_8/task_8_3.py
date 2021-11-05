@@ -16,7 +16,7 @@ def type_logger(func):
 def calc_cube(*args):
     return [arg ** 3 for arg in args]
 
-
-a = calc_cube(5, 3, 6)
-print(a)
+if __name__ == '__main__':
+    a = calc_cube(5, 3, 6)
+    print(a)
 
