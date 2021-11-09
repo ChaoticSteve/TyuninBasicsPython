@@ -57,9 +57,9 @@ print(town_car.colour)
 print(town_car.name)
 print(town_car.police)
 
-sport_car = SportCar('270', 'красна', 'McLaren F1') # Cause red goez fasta!
+sport_car = SportCar('270', 'красная', 'McLaren F1') # Cause red goez fasta!
 print(sport_car)
 
-police_car = PoliceCar('240', 'blue-white', 'Skoda Octavia')
+police_car = PoliceCar('240', 'сине-белая', 'Skoda Octavia')
 print(police_car)
 print(police_car.police)
