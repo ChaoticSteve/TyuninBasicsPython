@@ -11,9 +11,9 @@ class Position(Worker):
         return f'{self.name} {self.surname}'
 
     def total_income(self):
-        return f'{(self._income["wade"] + self._income["bonus"])} bottle caps'
+        return f'{(self._income["wade"] + self._income["bonus"])} крышки'
 
 
-detective = Position('Nick', 'Valentine', 'detective', 300, 50)
+detective = Position('Ник', 'Валентайн', 'детектив', 300, 50)
 print(detective.get_full_name())
 print(detective.total_income())
