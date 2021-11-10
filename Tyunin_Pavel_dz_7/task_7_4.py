@@ -20,14 +20,14 @@ def get_stat(folder_path):
                 stat[key] += 1
             else:
                 stat[key] = 1
-    if stat == {}:
+    if not stat:
         raise Exception('В директироии нет файлов')
     return stat
 
 
 if __name__ == '__main__':
     try:
-        my_folder_path = r'.'
+        my_folder_path = os.getcwd()
         show_stat(my_folder_path)
     except Exception as e:
         print(e)
