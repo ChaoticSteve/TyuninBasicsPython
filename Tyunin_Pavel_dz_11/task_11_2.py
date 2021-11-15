@@ -1,6 +1,4 @@
 class ZeroDivision(Exception):
-    # def __init__(self, text):
-    #     self.text = text
     def __str__(self):
         return f'На 0 делить нелья'
 
