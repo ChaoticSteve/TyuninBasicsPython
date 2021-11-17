@@ -35,7 +35,7 @@ while True:
 #
 # try:
 #     number = input('Введите число или stop: ')
-#     if not number.isdigit() or number.isdigit():
+#     if number:
 #         raise CheckList
 # except CheckList:
 #     pass
