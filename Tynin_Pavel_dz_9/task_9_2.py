@@ -8,4 +8,4 @@ class Road:
 
 
 road = Road(20, 5000)
-print(road.mass(25, 5))
+print(road.get_mass(25, 5))
